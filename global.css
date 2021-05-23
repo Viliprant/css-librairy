@@ -1,0 +1,139 @@
+:root{
+    --default-color: #343642;
+    --primary-color: #B00B69;
+    --small-color: #6f6e6e;
+    --primary-background-color: #f2f2f2;
+    --secondary-background-color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--primary-background-color);
+    color: var(--default-color);
+}
+main > *{
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+}
+section{
+    background-color: var(--secondary-background-color);
+    padding: 0.5rem 1rem;
+}
+    section:not(.grid) > section{
+        margin-top: 1rem;
+    }
+    section + section:not(.grid){
+        margin-top: 0.5rem;
+    }
+    section:is(.grid) > section + section:not(.grid){
+        margin-top: 0;
+    }
+small{
+    color: var(--small-color);
+    padding: 1em 0;
+}
+h1{
+    margin: 0.5rem 0;
+    color: var(--primary-color)
+}
+
+::-webkit-scrollbar{
+    width: 0.4rem;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+/* TEXT */
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.text-reset{
+    font-weight: normal;
+    font-style: normal;
+    color: var(--default-color);
+}
+.default-color{
+    color: var(--default-color);
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.text-error{
+    color: #f44336;
+}
+.text-success{
+    color: #4caf50;
+}
+.text-info{
+    color: #2196f3;
+}
+.text-warning{
+    color: #ff9800;
+}
+
+/* FLEX */
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.flex-item-grow{
+    flex: 1;
+}
+
+/* GRID */
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+.grid-auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.grid-auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* ROUNDED BOX */
+.rounded-1{
+    border-radius: 5px;
+}
+.rounded-2{
+    border-radius: 15px;
+}
+.rounded-3{
+    border-radius: 25px;
+}
+.rounded-as-circle{
+    border-radius: 50%;
+}
+
+/* BOX-SHADOW */
+.BS-1{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.BS-2{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.BS-3{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
