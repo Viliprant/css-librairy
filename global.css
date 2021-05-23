@@ -82,6 +82,13 @@ h1{
 .text-warning{
     color: #ff9800;
 }
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:visited{
+    color: var(--primary-color);
+}
 
 /* FLEX */
 .flex{
