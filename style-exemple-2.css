@@ -1,0 +1,12 @@
+a.logo span{
+    margin: 0;
+    font-size: 1.5em;
+}
+h1[id]{
+    scroll-margin-top: 73px;
+}
+body{
+    background: #B993D6;
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+}
